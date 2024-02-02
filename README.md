@@ -12,7 +12,7 @@
 
 ## Description
 
-Video Tutorial: 
+Video Tutorial: https://drive.google.com/file/d/1_R2Nb-1UA-bQihrdmLSw707jLO8gFLRW/view
 
 GitHub Repo: https://github.com/smithz852/ecommerce-app.git
 
