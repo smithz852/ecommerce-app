@@ -52,6 +52,7 @@ router.post("/", (req, res) => {
     price: req.body.price,
     stock: req.body.stock,
     tagIds: req.body.tagIds,
+    category_id: req.body.category_id,
   })
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -83,7 +84,8 @@ router.put("/:id", (req, res) => {
       product_name: req.body.product_name,
       price: req.body.price,
       stock: req.body.stock,
-      // tagIds: req.body.tagIds,
+      tagIds: req.body.tagIds,
+      category_id: req.body.category_id,
     },
     {
       where: {
@@ -119,7 +121,7 @@ router.put("/:id", (req, res) => {
         }).catch(console.error);
       }
 
-      return res.json(product);
+      return res.json(`Item ${req.params.id} was deleted.`);
     })
     .catch((err) => {
       // console.log(err);
