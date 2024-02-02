@@ -14,7 +14,7 @@
 
 Video Tutorial: 
 
-GitHub Repo: 
+GitHub Repo: https://github.com/smithz852/ecommerce-app.git
 
 A server app meant to host a database of products.
 
