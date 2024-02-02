@@ -64,7 +64,7 @@ router.put('/:id', async (req, res) => {
       res.status(404).json({ message: 'No user with this id!' });
       return;
     }
-    res.status(200).json(tagData);
+    res.status(200).json(`Tag ${req.params.id} was updated.`);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -80,11 +80,11 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!tagData) {
-      res.status(404).json({ message: 'No library card found with that id!' });
+      res.status(404).json({ message: 'No tag found with that id!' });
       return;
     }
 
-    res.status(200).json(tagData);
+    res.status(200).json(`Tag ${req.params.id} was deleted.`);
   } catch (err) {
     res.status(500).json(err);
   }
